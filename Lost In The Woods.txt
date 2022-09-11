@@ -1,0 +1,38 @@
+pA college passout Bob is returning to his own college for hiring candidates for the company he works for. Bob is very excited to go back to his college, but realizes after entering his college that it has changed a lot. After becoming a university, there are lots of new blocks being constructed. Bob tries to go to TnP cell to meet his favourite professor who is the head of the TnP cell, but there are various obstacles that come in his way. Can you help him meet his favourite professor by guiding him the correct way to roam in college.
+
+You are given N space separated characters, the first one represents the current location of Bob, the last on representing the location Bob wants to reach to. There are obstacles in the way represented by *, you need to jump if the next step is an obstacle, and you can cross all the adjacent obstacles on jumping. If there no obstacles, Bob will walk through the path. You have to give Bob signals to tell him how to move.
+
+Signals:
+W:Walk
+J:Jump
+
+His favourite professor is not changing his location until he comes!! Please guide Bob in reaching the location.
+
+Constraints
+1<=N<=10^5
+
+Input Format
+The first line contains N, the number of steps.
+The second line contains N space separated characters 
+(_ or * or S or D), '_' representing a clear path, '*' representing an obstacle,
+'S' representing starting point, 'D' representing destination.
+
+Output Format
+Signal string representing the path Bob should take.
+
+Sample Input
+12
+S _ * * _ _ _ * _ * * D
+
+Sample Output
+WJWWJJ
+
+Explanation
+Consider I indexing,
+S _ *  * _  _  _ * _ *   *   D
+1 2 3 4 5 6 7 8 9 10 11 12
+1-2: Walk
+2-5: Jump
+5-6: Walk
+6-7: Walk
+7-9: Jump
